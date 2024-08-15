@@ -73,3 +73,14 @@ python run_demo.py \
     --mode multi
 ```
 
+
+
+## Acknowledge
+
+[HaMeR](https://github.com/geopavlakos/hamer/tree/main)
+
+[ViTPose](https://github.com/ViTAE-Transformer/ViTPose/tree/d5216452796c90c6bc29f5c5ec0bdba94366768a)
+
+[IntagHand](https://github.com/Dw1010/IntagHand)
+
+[Deformer](https://github.com/fuqichen1998/Deformer)
