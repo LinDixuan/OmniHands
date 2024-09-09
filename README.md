@@ -1,4 +1,4 @@
-# OminiHands
+# OmniHands
 
 ![teaser](assets/demo.png)
 
