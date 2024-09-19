@@ -26,8 +26,8 @@ from vitpose_model import ViTPoseModel
 import json
 from typing import Dict, Optional
 
-manoData_R = pickle.load(open('/workspace/hamer_twohand/_DATA/data/mano/MANO_RIGHT.pkl', 'rb'), encoding='latin1')
-manoData_L = pickle.load(open('/workspace/hamer_twohand/_DATA/data/mano/MANO_LEFT.pkl', 'rb'), encoding='latin1')
+manoData_R = pickle.load(open('_DATA/data/mano/MANO_RIGHT.pkl', 'rb'), encoding='latin1')
+manoData_L = pickle.load(open('_DATA/data/mano/MANO_LEFT.pkl', 'rb'), encoding='latin1')
 def save_mesh_to_ply(vertex_data, file_path,hand_type='right'):
     if vertex_data.shape[0] == 1:
         vertex_data = vertex_data[0]

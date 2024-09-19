@@ -23,6 +23,7 @@ setup(
         'einops',
         'xtcocotools',
         'pandas',
+        'plyfile',
     ],
     extras_require={
         'all': [

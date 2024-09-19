@@ -20,7 +20,6 @@ from .relighted_multi import Relighted_Multiview
 from .relighted_mano import MANO
 from ..utils.geometry import aa_to_rotmat, perspective_projection
 from .interhand_temp import get_temp_dataset
-from .dexycb_multi import DexYCB_Temporal_Twohand
 
 def create_webdataset(cfg: CfgNode, dataset_cfg: CfgNode, train: bool = True) -> Dataset:
     """
@@ -242,11 +241,6 @@ class Mix_multi(pl.LightningDataModule):
         inter26_train = get_multi_dataset(T=cfg.MODEL.SEQ_LEN, split="train")
         relighted_train = Relighted_Multiview(T=cfg.MODEL.SEQ_LEN)
         inter26_val = get_multi_dataset(T=cfg.MODEL.SEQ_LEN, split="test")
-        #arctic_val = Arctic_Multiview(T=cfg.MODEL.SEQ_LEN, split="val")
-        #dex_train = DexYCB_Temporal_Twohand(dataset_root=dex_data_root, train_label_root=dex_label_root,
-        #                                    mode="train", T=cfg.MODEL.SEQ_LEN)
-        #dex_test = DexYCB_Temporal_Twohand(dataset_root=dex_data_root, train_label_root=dex_label_root,
-        #                                    mode="test", T=cfg.MODEL.SEQ_LEN)
 
         self.train_dataset = mix_dataset(dataset_list=[inter26_train],
                                          dataset_prob=[0.4, ])
