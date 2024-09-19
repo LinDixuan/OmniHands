@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 print('Found packages:', find_packages())
 setup(
-    description='HaMeR as a package',
-    name='hamer',
+    description='Installing packages following HaMeR @ https://github.com/geopavlakos/hamer',
+    name='OmniHands',
     packages=find_packages(),
     install_requires=[
         'gdown',
