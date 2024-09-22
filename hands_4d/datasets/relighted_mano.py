@@ -39,7 +39,7 @@ def cam2pixel_batch(cam_coord, f, c):
 
 class MANO(object):
     def __init__(self,use_pca=False):
-        human_model_path = '/workspace/hamer_twohand/_DATA/data/'
+        human_model_path = './_DATA/data/'
         self.layer_arg = {'create_global_orient': False, 'create_hand_pose': False, 'create_betas': False,
                           'create_transl': False, 'num_pca_comps': 45}
         self.layer = {
