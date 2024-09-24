@@ -72,7 +72,7 @@ def detect_video(video_path, bbox_save_path):
     from hands_4d.utils.utils_detectron2 import DefaultPredictor_Lazy
     from detectron2.config import LazyConfig
     import hands_4d
-    device = torch.device('cuda:7') if torch.cuda.is_available() else torch.device('cpu')
+    device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
     cfg_path = Path(hands_4d.__file__).parent / 'configs' / 'cascade_mask_rcnn_vitdet_h_75ep.py'
     detectron2_cfg = LazyConfig.load(str(cfg_path))
     detectron2_cfg.train.init_checkpoint = "https://dl.fbaipublicfiles.com/detectron2/ViTDet/COCO/cascade_mask_rcnn_vitdet_h/f328730692/model_final_f05665.pkl"
