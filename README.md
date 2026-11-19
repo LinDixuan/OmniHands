@@ -21,7 +21,7 @@ pip install -v -e third-party/ViTPose
 
 We provide models and checkpoints that can deal with following tasks: Single Image Reconstruction, Video Reconstruction, Multiview Reconstruction.
 
-Download our checkpoint [Demo_Video.pth](https://drive.google.com/file/d/1ZoP4qmYE8MyXCfhGK5meWWfBOYpy1VZ7/view?usp=sharing), [Demo_Image.pth](https://drive.google.com/file/d/1jLo7cFIWeDXep_hhvumWdm90QIwy_HwB/view?usp=sharing), [Demo_Multiview.pth](https://drive.google.com/file/d/10EZF6qLQuTyrxS0glP23HFOAdiLQ9gy7/view?usp=sharing), [Eval_Video.pth](https://drive.google.com/file/d/1SeX9t6mKpkQp3V3YqxTdQzDuXnnVNgZl/view?usp=sharing), and put them under **./checkpoints** . The Demo checkpoints are for in-the-wild demo, and the Eval checkpoint is for dataset validation on Interhand2.6m. 
+Download our checkpoint [Demo_Video.pth](https://drive.google.com/file/d/1pH1qOruu2iuETzQkYy8f98qk59QBoFCZ/view?usp=sharing), [Demo_Image.pth](https://drive.google.com/file/d/1IEBb9iEXCjyZaeV4Hqj8pZvmbBe8IATO/view?usp=sharing), [Demo_Multiview.pth](https://drive.google.com/file/d/1pl4CAZghszPn8SHRyJWne2asz4aYT11g/view?usp=sharing), [Eval_Video.pth](https://drive.google.com/file/d/1jwLGfVJlixYLLyMqae8kEB37dBsKdnK0/view?usp=sharing), and put them under **./checkpoints** . The Demo checkpoints are for in-the-wild demo, and the Eval checkpoint is for dataset validation on Interhand2.6m. 
 
 And download mano files from [MANO](https://mano.is.tue.mpg.de/), put **MANO_RIGHT.pkl** and **MANO_LEFT.pkl** under **_DATA/data/mano**.
 
